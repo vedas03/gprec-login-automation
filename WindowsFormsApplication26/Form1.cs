@@ -55,8 +55,8 @@ namespace WindowsFormsApplication26
 
             //var sub = driver.FindElement(By.CssSelector("#ctl00_ContentPlaceHolder1_ImageButton1"));
             //sub.SendKeys(Keys.Enter);
-            var year = 1999;
-            var m = 5;
+            var year = 1997;
+            var m = 1;
             var kk = "";
             var km = "";
             //   Console.WriteLine(m);
@@ -65,7 +65,7 @@ namespace WindowsFormsApplication26
             while (year <= 2000)
             {
                 string xx = year.ToString();
-                for (var k = 16; k < 35; k++)
+                for (var k = 1; k < 35; k++)
                 {
 
                     if (k < 10)
