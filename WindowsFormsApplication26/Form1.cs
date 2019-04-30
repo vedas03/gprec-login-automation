@@ -33,8 +33,11 @@ namespace WindowsFormsApplication26
             var driverService = ChromeDriverService.CreateDefaultService();
             driverService.HideCommandPromptWindow = true;
             var options = new ChromeOptions();
-          //  options.AddArgument("--headless");
+            //  options.AddArgument("--headless");
+
+            //***********************download the chrme driver from git and save in any local directory and place the ralative part here***************************
             var driver = new ChromeDriver(@"C:\Users\srinivasa rao\Documents\imagerendering\ImageRender\packages\Selenium.WebDriver.ChromeDriver.2.37.0\driver\win32",options);
+            /// var driver = new ChromeDriver(@"\packages\Selenium.WebDriver.ChromeDriver.74.0.3729.6\driver\win32",options);
             IJavaScriptExecutor js = driver as IJavaScriptExecutor;
             IWebElement element;
             //options.AddArgument("headless");
